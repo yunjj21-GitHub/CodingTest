@@ -40,10 +40,6 @@ void getInputValue() {
 }
 
 int solution() { // BFS 탐색 이용
-	if (q.size() == m * n) { // 저장될 때부터 모든 토마토가 익어있는 상태이면
-		return 0;
-	}
-
 	int maxDay = 0;
 
 	while (!q.empty()) {
