@@ -28,7 +28,7 @@ void getSafetyZone(vector<vector<int>> map, queue<pair<int, int>> q) {
 
 			if (map[nxtY][nxtX] != 0) continue;
 
-			map[nxtY][nxtX] = 1;
+			map[nxtY][nxtX] = 2;
 			q.push({ nxtY, nxtX });
 		}
 	}
