@@ -1,4 +1,4 @@
-// 백준 14502 : 연구소 (완전탐색 + BFS)
+/*// 백준 14502 : 연구소 (완전탐색 + BFS)
 #include <iostream>
 #include <vector>
 #include <string>
@@ -76,4 +76,4 @@ int main() {
 	solution(0);
 
 	cout << answer << endl;
-}
+}*/
