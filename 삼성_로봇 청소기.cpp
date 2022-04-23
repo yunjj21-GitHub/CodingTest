@@ -1,4 +1,4 @@
-// 삼성 기출 : 로봇 청소기
+// 삼성 기출 : 로봇 청소기 (구현)
 #include <iostream>
 #include <string>
 #include <vector>
