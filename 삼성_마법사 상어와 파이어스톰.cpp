@@ -1,4 +1,4 @@
-// 삼성 기출 : 마법사 상어와 파이어스톰 (구현 + DFS)
+/* // 삼성 기출 : 마법사 상어와 파이어스톰 (구현 + DFS)
 #include <iostream>
 #include <vector>
 #include <string>
@@ -149,4 +149,4 @@ int main() {
 	for (int ans : answer) {
 		cout << ans << endl;
 	}
-}
+} */
