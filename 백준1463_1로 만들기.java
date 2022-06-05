@@ -1,5 +1,4 @@
-// [±³º¸Á¤º¸Åë½Å ÄÚµùÅ×½ºÆ® ¿¬½À] ¹éÁØ 1463 : 1·Î ¸¸µé±â
-package kyoboCodingTestPractice;
+// ë°±ì¤€ 1463 : 1ë¡œ ë§Œë“¤ê¸°
 import java.util.*;
 
 class Main {
@@ -7,17 +6,17 @@ class Main {
 		int answer = 0;
 		
 		int[] dp = new int[n + 1];
-		int INF = 10000000; // ÀÓÀÇÀÇ Å« °ª
+		int INF = 10000000; // ì„ì˜ì˜ í° ê°’
 		Arrays.fill(dp, INF);
 		dp[n] = 0;
 		for(int i=n; i>=1; i--) {
-			if(i % 3 == 0) { // 3À¸·Î ³ª´©´Â °æ¿ì
+			if(i % 3 == 0) { // 3ìœ¼ë¡œ ë‚˜ëˆ„ëŠ” ê²½ìš°
 				dp[i / 3] = Math.min(dp[i / 3], dp[i] + 1);	
 			}
-			if(i % 2 == 0) { // 2·Î ³ª´©´Â °æ¿ì
+			if(i % 2 == 0) { // 2ë¡œ ë‚˜ëˆ„ëŠ” ê²½ìš°
 				dp[i / 2] = Math.min(dp[i / 2], dp[i] + 1);
 			}
-			// 1À» »©´Â °æ¿ì
+			// 1ì„ ë¹¼ëŠ” ê²½ìš°
 			dp[i - 1] = Math.min(dp[i-1], dp[i]  + 1);
 		}
 		
@@ -28,7 +27,7 @@ class Main {
 	public static void main(String[] args) {
 		Main sol = new Main();
 		
-		// ÀÔ·Â°ªÀ» ¹Ş¾Æ¿Â´Ù.
+		// ì…ë ¥ê°’ì„ ë°›ì•„ì˜¨ë‹¤.
 		Scanner scanner = new Scanner(System.in);
 		int input = scanner.nextInt();
 		int ret = sol.solution(input);
